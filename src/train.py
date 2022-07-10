@@ -18,7 +18,7 @@ from .tools import SimpleLoss, get_batch_iou, get_val_info
 def train(version,
             dataroot='/data/nuscenes',
             nepochs=10000,
-            gpuid=1,
+            gpuid=0,
 
             H=900, W=1600,
             resize_lim=(0.193, 0.225),
