@@ -111,7 +111,7 @@ def lidar_check(version,
                 ax = plt.subplot(gs[:, 4:5])
                 plt.imshow(binimgs[si].squeeze(0).T, origin='lower', cmap='Greys', vmin=0, vmax=1)
 
-                imname = f'lcheck{epoch:03}_{batchi:05}_{si:02}.jpg'
+                imname = f'./results/lcheck{epoch:03}_{batchi:05}_{si:02}.jpg'
                 print('saving', imname)
                 plt.savefig(imname)
 
@@ -357,7 +357,7 @@ def viz_model_preds(version,
                 plt.ylim((0, out.shape[3]))
                 add_ego(bx, dx)
 
-                imname = f'eval{batchi:06}_{si:03}.jpg'
+                imname = f'./results/eval{batchi:06}_{si:03}.jpg'
                 print('saving', imname)
                 plt.savefig(imname)
                 counter += 1
