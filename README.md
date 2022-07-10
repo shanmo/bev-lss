@@ -23,5 +23,8 @@ python main.py lidar_check mini --dataroot=/mnt/disk/datasets/nuscenes/v1.0-mini
 - train 
 ```
 python main.py train mini --dataroot=/mnt/disk/datasets/nuscenes/v1.0-mini --logdir=./runs --gpuid=0 --nepochs=1
+```
+```
 tensorboard --logdir=./runs --bind_all
+url is http://nuc:6006/
 ```
